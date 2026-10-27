@@ -1,0 +1,49 @@
+name: Update stats
+
+on:
+  schedule:
+    - cron: "17 */6 * * *"   # every 6 hours
+  push:
+    branches: [main]
+    paths:
+      - .github/**
+  workflow_dispatch:
+
+permissions:
+  contents: write   # push the card to the output branch
+  actions: write    # keepalive
+
+# A scheduled run and a push run must not push to the output branch at the same time
+concurrency:
+  group: update-stats
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Count pulls and draw the card
+        run: python3 .github/scripts/update-stats.py dist
+
+      # The card lives on its own branch that is replaced on every run,
+      # so main does not get a commit for every few new pulls.
+      - name: Publish to output branch
+        env:
+          GH_TOKEN: ${{ github.token }}
+        working-directory: dist
+        run: |
+          git init -q -b output
+          git add .
+          git -c user.name="github-actions[bot]" \
+              -c user.email="41898282+github-actions[bot]@users.noreply.github.com" \
+              commit -qm "Update stats"
+          git push -qf "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" output
+
+      # GitHub disables scheduled workflows after 60 days without repository activity.
+      # Re-enabling this workflow on every run resets that timer.
+      - name: Keepalive
+        if: ${{ !cancelled() }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api --silent -X PUT "repos/${{ github.repository }}/actions/workflows/update-stats.yml/enable"

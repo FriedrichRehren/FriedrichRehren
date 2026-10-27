@@ -1,0 +1,16 @@
+# Projects shown on the pulls card in the README, top to bottom.
+# "[name]" starts a project; the pulls of all links below it are added up.
+#
+# Accepted links (one per line, copy them straight from the browser):
+#   https://hub.docker.com/r/<user>/<image>
+#   https://github.com/users/<user>/packages/container/package/<image>
+#   docker.io/<user>/<image>
+#   ghcr.io/<user>/<image>
+
+[yt-dlp]
+https://hub.docker.com/r/friedrichrehren/yt-dlp
+https://github.com/users/friedrichrehren/packages/container/package/yt-dlp
+
+[resourcespace]
+https://hub.docker.com/r/friedrichrehren/resourcespace
+https://github.com/users/friedrichrehren/packages/container/package/resourcespace
