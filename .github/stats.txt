@@ -14,3 +14,7 @@ https://github.com/users/friedrichrehren/packages/container/package/yt-dlp
 [resourcespace]
 https://hub.docker.com/r/friedrichrehren/resourcespace
 https://github.com/users/friedrichrehren/packages/container/package/resourcespace
+
+[gitlab-migrator]
+https://hub.docker.com/r/friedrichrehren/gitlab-migrator
+https://github.com/users/friedrichrehren/packages/container/package/gitlab-migrator
