@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="252" viewBox="0 0 480 252" role="img" aria-labelledby="title" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helvetica,Arial,sans-serif">
+<title id="title">Container image pulls: 12,273 in total (yt-dlp 11,203; resourcespace 558; gitlab-migrator 512)</title>
+<rect x="0.5" y="0.5" width="479" height="251" rx="6" fill="#0d1117" stroke="#3d444d"/>
+<text x="24" y="40" font-size="14" fill="#9198a1">Container image pulls</text>
+<text x="22" y="94" font-size="48" font-weight="600" fill="#f0f6fc">12,273</text>
+<text x="24" y="143.0" font-size="14" fill="#f0f6fc">yt-dlp</text>
+<text x="456" y="143.0" font-size="14" fill="#f0f6fc" text-anchor="end" style="font-variant-numeric:tabular-nums">11,203</text>
+<rect x="161.8" y="134.0" width="183.7" height="8" fill="#3987e5"/>
+<path d="M347.5,134.0h39.8a4.0,4.0 0 0 1 4.0,4.0v0.0a4.0,4.0 0 0 1 -4.0,4.0h-39.8z" fill="#d95926"/>
+<text x="24" y="171.0" font-size="14" fill="#f0f6fc">resourcespace</text>
+<text x="456" y="171.0" font-size="14" fill="#f0f6fc" text-anchor="end" style="font-variant-numeric:tabular-nums">558</text>
+<path d="M161.8,162.0h7.4a4.0,4.0 0 0 1 4.0,4.0v0.0a4.0,4.0 0 0 1 -4.0,4.0h-7.4z" fill="#3987e5"/>
+<text x="24" y="199.0" font-size="14" fill="#f0f6fc">gitlab-migrator</text>
+<text x="456" y="199.0" font-size="14" fill="#f0f6fc" text-anchor="end" style="font-variant-numeric:tabular-nums">512</text>
+<path d="M161.8,190.0h6.5a4.0,4.0 0 0 1 4.0,4.0v0.0a4.0,4.0 0 0 1 -4.0,4.0h-6.5z" fill="#3987e5"/>
+<rect x="24" y="221" width="10" height="10" rx="2" fill="#3987e5"/>
+<text x="40" y="230" font-size="13" fill="#9198a1">Docker Hub <tspan fill="#f0f6fc" font-weight="600">10,095</tspan></text>
+<rect x="180.17999999999998" y="221" width="10" height="10" rx="2" fill="#d95926"/>
+<text x="196.17999999999998" y="230" font-size="13" fill="#9198a1">GHCR <tspan fill="#f0f6fc" font-weight="600">2,178</tspan></text>
+<text x="456" y="230" font-size="12" fill="#9198a1" text-anchor="end">Updated 31 Oct 2026</text>
+</svg>
